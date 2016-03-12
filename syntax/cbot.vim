@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:     CBOT
-" Maintainer:   Kompowiec2 <chipteken@gmail.com>
+" Maintainer:   Kompowiec2 <smackoo@o2.pl>
 " Filenames:    *.cbot
 " URL:		http://www.kompowiec2.cba.pl
 " Last Change:  2015 September 30
@@ -18,9 +18,10 @@ runtime! syntax/c.vim
 
 syntax case match
 
-syntax keyword CbotType int float bool string point object void extern 
-syn keyword CbotStatement Houston SpaceShip BotFactory ResearchCenter RadarStation ExchangePost RepairCenter DefenseTower AutoLab PowerStation PowerPlant NuclerPlant Converter Derrick PowerCaptor Vault StartArea GoalArea AlienNest Titanium0re Uranium0re Titanium PowerCell NuclearCell OrgaMatter BlackBox TNT KeyA KeyB KeyC KeyD PracticeBot TargetBot TrackedGrabber WheeledGrabber WingedGrabber LeggedGrabber WheeledSniffer TrackedSniffer WingedSniffer LeggedSniffer WheeledShooter TrackedShooter WingedShooter LeggedShooter Wheeled0rgaShooter Tacked0rgaShooter Winged0rgaShooter Legged0rgaShooter Subber recycler Shielder Thumper PhazerShooter AlienQueen AlienEgg AlienAnt AlienSpider AlienWasp AlienWorm Me Mine Barrier Wreck Ruin BlueFlag RedFlag GreenFlag YellowFlag VioletFlag WayPoint EnergySpot TitaniumSpot UraniumSpot
+syntax keyword CbotType int float bool string point object extern produce 
+syn keyword CbotStatement Houston SpaceShip BotFactory ResearchCenter RadarStation ExchangePost RepairCenter DefenseTower AutoLab PowerStation PowerPlant NuclerPlant Converter Derrick PowerCaptor Vault StartArea GoalArea AlienNest TitaniumOre UraniumOre Titanium PowerCell NuclearCell OrgaMatter BlackBox TNT KeyA KeyB KeyC KeyD PracticeBot TargetBot TrackedGrabber WheeledGrabber WingedGrabber LeggedGrabber WheeledSniffer TrackedSniffer WingedSniffer LeggedSniffer WheeledShooter TrackedShooter WingedShooter LeggedShooter WheeledOrgaShooter TackedOrgaShooter WingedOrgaShooter LeggedOrgaShooter Subber recycler Shielder Thumper PhazerShooter AlienQueen AlienEgg AlienAnt AlienSpider AlienWasp AlienWorm Me Mine Barrier Wreck Ruin BlueFlag RedFlag GreenFlag YellowFlag VioletFlag WayPoint EnergySpot TitaniumSpot UraniumSpot
 syn keyword CbotString radar direction distance distance2d wait move turn goto motor jet message retobject errmode abstime space topo flatground grab drop sniff thump recycle shueld fire aim receive send testinfo deleteinfo new this strlen streft stright strmrid strfind strval strupper strlower open close writeln readln eof deletefile
+syn keyword	cRepeat		try catch
 
 
 if version >= 508 || !exists("did_xxd_syntax_inits")
