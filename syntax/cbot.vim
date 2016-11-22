@@ -40,10 +40,10 @@ if version >= 508 || !exists("did_xxd_syntax_inits")
   endif
 
  HiLink CbotType	Type
- HiLink CbotStatement 	Statement
+ HiLink CbotStatement 	Underlined
  HiLink CbotBots 	String
  HiLink CbotGrab	Special	
- HiLink CbotObjects	Underlined	
+ HiLink CbotObjects	Statement
  HiLink CbotExchange	Special	
  HiLink CbotFiles	Special
  HiLink CbotString	String	
