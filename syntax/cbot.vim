@@ -3,7 +3,7 @@
 " Maintainer:   Kompowiec2 <diasp@o2.pl>
 " Filenames:    *.cbot
 " URL:		http://www.kompowiec.github.io
-" Last Change:  2015 September 30
+" Last Change:  2016   November 25
 
 if !exists("main_syntax")
 if version < 600
