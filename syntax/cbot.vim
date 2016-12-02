@@ -35,13 +35,17 @@ syn keyword CbotFiles open close writeln readln eof deletefile
 syn keyword cRepeat try catch
 syn keyword CbotError CBOTDEBUGDD .bmp
 "Help files
-"syn match HelpBrown /\/b;*/
-"syn match HelpYellow /\/t;*/
-"syn match HelpOrange /\/s;*/
-"syn match HelpTable /\/tab;*/
-"syn match HelpCourier /\/c;*/
-"syn match HelpImg /\/image;*/
-"syn match HelpLink /\/l;*/
+"syn match HelpImg /\image;*/
+"syn match HelpMono /\c;*/
+"syn match HelpHeading /\b;*/
+"syn match HelpYellow /\t;*/
+"syn match HelpOrange /\s;*/
+"syn match HelpSpecial /\tab;*/ " OK
+"syn match HelpLink /\l;/
+"syn match HelpU /\u;/
+"syn match HelpN /\n;/
+"syn keyword Scene Resume.[A-Z] ScriptName.[A-Z] ScriptName.[A-Z] Instructions Satelite Loading Soluce Help Ending Audio Ambient Color FogColor VehicleColor DeepView FogStart SecondTexture FrontsizeName Background TerrainGenerate TerrainWind TerrainRelief TerrainResource TerrainWater TerrainCloud TerrainMaterial TerrainInit TerrainLevel TerrainCrate BeginObject Create Object WaterColor MapColor MapZoom EnableResearch EndMissionTake Camera
+"syn keyword SceneMath pos dist type lost min lookat eye daly dir color id max slope freq image up down level vision depth rank air track water win lost text immediat reset option
 
 if version >= 508 || !exists("did_xxd_syntax_inits")
   if version < 508
@@ -50,7 +54,7 @@ if version >= 508 || !exists("did_xxd_syntax_inits")
   else
     command -nargs=+ HiLink hi def link <args>
   endif
-
+"CBOT
  HiLink CbotType         	Type
  HiLink CbotStatement      Underlined
  HiLink CbotBots         	Typedef
@@ -63,12 +67,17 @@ if version >= 508 || !exists("did_xxd_syntax_inits")
  HiLink CbotFiles	        Typedef
  HiLink CbotError	         Error
  HiLink CbotOther       	PreProc
-"HliLink HelpBrown        TODO 
-"HliLink HelpYellow       TODO
-"HliLink HelpOrange       TODO
-"HliLink HelpTable        TODO
-"HliLink HelpCourier      TODO
-"HliLink HelpImg          TODO
-"HliLink HelpLink         TODO
+"Help
+" HliLink HelpImg         TODO 
+" HliLink HelpMono        TODO
+" HliLink HelpYellow      TODO
+" HliLink HelpOrange      TODO
+" HliLink HelpSpecia      TODO
+" HliLink HelpLink        TODO
+" HliLink HelpU           TODO
+" HliLink HelpN           TODO
+"Scene
+" HiLink Scene             TODO 
+" HiLink SceneMath         TODO
  delcommand HiLink
 endif
