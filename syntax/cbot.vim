@@ -17,6 +17,7 @@ let main_syntax = 'cbot'
 endif
 
 runtime! syntax/c.vim
+runtime! syntax/java.vim
 
 syntax case match
 
@@ -40,10 +41,11 @@ if version >= 508 || !exists("did_xxd_syntax_inits")
   if version < 508
     let did_xxd_syntax_inits = 1
     command -nargs=+ HiLink hi link <args>
+  else
+    command -nargs=+ HiLink hi def link <args>
   endif
 
- HiLink CbotType         	Type
- HiLink CbotStatement     Underlined
+"CBOT
  HiLink CbotType         	Type
  HiLink CbotStatement     Underlined
  HiLink CbotBots         	Typedef
@@ -52,10 +54,10 @@ if version >= 508 || !exists("did_xxd_syntax_inits")
  HiLink CbotObjects	      Typedef
  HiLink CbotExchange    	Typedef	
  HiLink CbotClasses	      Function
- HiLink CbotOther       	PreProc
  HiLink CbotStr	        	Typedef
  HiLink CbotFiles	        Typedef
  HiLink CbotMath          Float 
  HiLink CbotError	        Error
+ HiLink CbotOther       	PreProc
  delcommand HiLink
 endif
