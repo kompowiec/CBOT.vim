@@ -17,7 +17,6 @@ let main_syntax = 'cbot'
 endif
 
 runtime! syntax/c.vim
-runtime! syntax/java.vim
 
 syntax case match
 
