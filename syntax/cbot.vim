@@ -4,8 +4,8 @@
 " Filenames:    *.cbot
 " URL:		      http://www.kompowiec.github.io/
 " Created:      2015 August 28
-" Last Change:  2016 November 29
-" Revision:     1.2
+" Last Change:  2017.07.22
+" Revision:     1.3
 
 if !exists("main_syntax")
 if version < 600
@@ -22,11 +22,17 @@ syntax case match
 
 "CBOT lang
 syntax keyword CbotType point object produce 
-syn keyword CbotStatement Houston SpaceShip BotFactory ResearchCenter RadarStation ExchangePost RepairCenter DefenseTower AutoLab PowerStation PowerPlant NuclearPlant Converter Derrick PowerCaptor Vault StartArea GoalArea AlienNest TitaniumOre UraniumOre Titanium PowerCell NuclearCell OrgaMatter BlackBox TNT KeyA KeyB KeyC KeyD PracticeBot TargetBot TrackedGrabber WheeledGrabber WingedGrabber LeggedGrabber WheeledSniffer TrackedSniffer WingedSniffer LeggedSniffer WheeledShooter TrackedShooter WingedShooter LeggedShooter WheeledOrgaShooter TackedOrgaShooter WingedOrgaShooter LeggedOrgaShooter Subber recycler Shielder Thumper PhazerShooter AlienQueen AlienEgg AlienAnt AlienSpider AlienWasp AlienWorm Me Mine Barrier Wreck Ruin BlueFlag RedFlag GreenFlag YellowFlag VioletFlag WayPoint TitaniumSpot UraniumSpot ResearchOrgaShooter ResearchLegged ResearchTracked ResearchWinged ResearchShooter ResearchDefenseTower ResearchNuclearPlant ResearchSubber ResearchShielder ResearchThumper ResearchPhazerShooter 
+syn keyword CbotBuildings Houston SpaceShip BotFactory ResearchCenter RadarStation ExchangePost RepairCenter DefenseTower AutoLab PowerStation PowerPlant NuclearPlant Converter Derrick PowerCaptor Vault StartArea GoalArea Target1 Targer2 AlienNest
+syn keyword CbotPortable TitaniumOre UraniumOre Titanium PowerCell NuclearCell OrgaMatter BlackBox TNT KeyA KeyB KeyC KeyD
+syn keyword CbotPracticeBot TargetBot TrackedGrabber WheeledGrabber WingedGrabber LeggedGrabber WheeledSniffer TrackedSniffer WingedSniffer LeggedSniffer WheeledShooter TrackedShooter WingedShooter LeggedShooter WheeledOrgaShooter TackedOrgaShooter WingedOrgaShooter LeggedOrgaShooter Subber recycler Shielder Thumper PhazerShooter
+syn keyword CbotEnemies AlienQueen AlienEgg AlienAnt AlienSpider AlienWasp AlienWorm
+syn keyword CbotMisc Me Mine Barrier Wreck Ruin
+syn keyword CbotFlags BlueFlag RedFlag GreenFlag YellowFlag VioletFlag WayPoint TitaniumSpot UraniumSpot
+syn keyword CbotMisc2 ResearchOrgaShooter ResearchLegged ResearchTracked ResearchWinged ResearchShooter ResearchDefenseTower ResearchNuclearPlant ResearchSubber ResearchShielder ResearchThumper ResearchPhazerShooter 
 syn keyword CbotBots detect radar radarall search direction distance distance2d wait move turn goto motor jet message retobject errmode abstime pendown penup pencolor penwidth canresearch researched
 syn keyword CbotTopo space flatspace topo flatground 
-syn keyword CbotRobots grab drop sniff thump shield fire aim bulid canbulid buldingenabled
-syn keyword CbotObjects factory takeoff busy
+syn keyword CbotRobots grab drop sniff thump recycle shield fire aim bulid canbulid buldingenabled
+syn keyword CbotObjects factory research takeoff busy
 syn keyword CbotExchange receive send testinfo deleteinfo
 syn keyword CbotClasses class public private protected static synchronized new extends extern
 syn keyword CbotOther this super
@@ -46,7 +52,13 @@ if version >= 508 || !exists("did_xxd_syntax_inits")
 
 "CBOT
  HiLink CbotType         	Type
- HiLink CbotStatement     Underlined
+ HiLink CbotBuildings     Underlined
+ HiLink CbotPortable      Underlined
+ HiLink CbotRobots    	  Underlined
+ HiLink CbotEnemies 	    Underlined
+ HiLink CbotMisc  	  	  Underlined
+ HiLink CbotFlags	    	  Underlined
+ HiLink CbotMisc2  	  	  Underlined
  HiLink CbotBots         	Typedef
  HiLink CbotTopo        	Typedef
  HiLink CbotRobots      	Typedef	
