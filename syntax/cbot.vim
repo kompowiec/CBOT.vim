@@ -22,6 +22,7 @@ syntax case match
 "CBOT lang
 syntax keyword CbotType point object produce 
 syn keyword CbotBuildings Houston SpaceShip BotFactory ResearchCenter RadarStation ExchangePost RepairCenter DefenseTower AutoLab PowerStation PowerPlant NuclearPlant Converter Derrick PowerCaptor Vault StartArea GoalArea Target1 AlienNest
+syn keyword CbotMessages DisplayMessage DisplayWarning DisplayInfo DisplayError
 syn keyword CbotPortable TitaniumOre UraniumOre Titanium PowerCell NuclearCell OrgaMatter BlackBox TNT KeyA KeyB KeyC KeyD
 syn keyword CbotPracticeBot PracticeBot TargetBot WheeledGrabber TrackedGrabber WingedGrabber LeggedGrabber WheeledSniffer TrackedSniffer WingedSniffer LeggedSniffer WheeledShooter TrackedShooter WingedShooter LeggedShooter WheeledOrgaShooter TackedOrgaShooter WingedOrgaShooter LeggedOrgaShooter Subber recycler Shielder Thumper PhazerShooter
 syn keyword CbotEnemies AlienQueen AlienEgg AlienAnt AlienSpider AlienWasp AlienWorm
@@ -51,6 +52,7 @@ if version >= 508 || !exists("did_xxd_syntax_inits")
 "CBOT
  HiLink CbotType         	Type
  HiLink CbotBuildings     Underlined
+ HiLink CbotMessages 			Underlined
  HiLink CbotPortable      Underlined
  HiLink CbotRobots    	  Underlined
  HiLink CbotEnemies 	    Underlined
