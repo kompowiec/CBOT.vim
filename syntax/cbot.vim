@@ -20,11 +20,11 @@ runtime! syntax/c.vim
 syntax case match
 
 "CBOT lang
-syntax keyword CbotType point object produce 
+syntax keyword CbotType point object produce
 syn keyword CbotBuildings Houston SpaceShip BotFactory ResearchCenter RadarStation ExchangePost RepairCenter DefenseTower AutoLab PowerStation PowerPlant NuclearPlant Converter Derrick PowerCaptor Vault StartArea GoalArea Target1 AlienNest
 syn keyword CbotMessages DisplayMessage DisplayWarning DisplayInfo DisplayError
 syn keyword CbotPortable TitaniumOre UraniumOre Titanium PowerCell NuclearCell OrgaMatter BlackBox TNT KeyA KeyB KeyC KeyD
-syn keyword CbotPracticeBot PracticeBot TargetBot WheeledGrabber TrackedGrabber WingedGrabber LeggedGrabber WheeledSniffer TrackedSniffer WingedSniffer LeggedSniffer WheeledShooter TrackedShooter WingedShooter LeggedShooter WheeledOrgaShooter TackedOrgaShooter WingedOrgaShooter LeggedOrgaShooter Subber recycler Shielder Thumper PhazerShooter
+syn keyword CbotPracticeBot PracticeBot TargetBot WheeledGrabber TrackedGrabber WingedGrabber LeggedGrabber WheeledSniffer TrackedSniffer WingedSniffer LeggedSniffer WheeledShooter TrackedShooter WingedShooter LeggedShooter WheeledOrgaShooter TrackedOrgaShooter WingedOrgaShooter LeggedOrgaShooter Subber recycler Shielder Thumper PhazerShooter
 syn keyword CbotEnemies AlienQueen AlienEgg AlienAnt AlienSpider AlienWasp AlienWorm
 syn keyword CbotMisc Me Mine Barrier Wreck Ruin
 syn keyword CbotFlags BlueFlag RedFlag GreenFlag YellowFlag VioletFlag WayPoint Target2 EnergySpot TitaniumSpot UraniumSpot
@@ -34,7 +34,8 @@ syn keyword CbotTopo space flatspace topo flatground
 syn keyword CbotRobots grab drop sniff thump recycle shield fire aim build canbuild buildingenabled
 syn keyword CbotObjects factory research takeoff busy
 syn keyword CbotExchange receive send testinfo deleteinfo
-syn keyword CbotClasses class public private protected static synchronized new this extends super extern
+syn keyword CbotClasses class public private protected static synchronized new extends extern
+syn keyword CbotPoint this super
 syn keyword CbotStr strlen strleft strright strmid strfind strval strupper strlower
 syn keyword CbotFiles open close writeln readln eof deletefile
 syn keyword CbotMath rand pow sqrt floor ceil round trunc sin cos tan asin acos atan atan2
@@ -51,24 +52,24 @@ if version >= 508 || !exists("did_xxd_syntax_inits")
 
 "CBOT
  HiLink CbotType         	Type
- HiLink CbotBuildings     Underlined
- HiLink CbotMessages 			Underlined
- HiLink CbotPortable      Underlined
- HiLink CbotRobots    	  Underlined
- HiLink CbotEnemies 	    Underlined
- HiLink CbotMisc  	  	  Underlined
- HiLink CbotFlags	    	  Underlined
- HiLink CbotMisc2  	  	  Underlined
- HiLink CbotBots         	Typedef
- HiLink CbotTopo        	Typedef
- HiLink CbotRobots      	Typedef	
- HiLink CbotObjects	      Typedef
- HiLink CbotExchange    	Typedef	
- HiLink CbotClasses	      Function
- HiLink CbotStr	        	Typedef
- HiLink CbotFiles	        Typedef
- HiLink CbotMath          Float 
+ HiLink CbotBuildings     Constant
+ HiLink CbotMessages 			Constant
+ HiLink CbotPortable      Constant
+ HiLink CbotRobots    	  Constant
+ HiLink CbotEnemies 	    Constant
+ HiLink CbotMisc  	  	  Constant
+ HiLink CbotFlags	    	  Constant
+ HiLink CbotMisc2  	  	  Constant
+ HiLink CbotBots         	Statement
+ HiLink CbotTopo        	Statement
+ HiLink CbotRobots      	Statement	
+ HiLink CbotObjects	      Statement
+ HiLink CbotExchange    	Statement
+ HiLink CbotClasses			  Function
+ HiLink CbotPoint					PreProc
+ HiLink CbotStr	        	Statement
+ HiLink CbotFiles	        Statement
+ HiLink CbotMath          Statement
  HiLink CbotError	        Error
- HiLink CbotOther       	PreProc
  delcommand HiLink
 endif
