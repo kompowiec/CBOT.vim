@@ -3,8 +3,8 @@
 " Maintainer:   Kompowiec2 <diasp@o2.pl>
 " Filenames:    *.cbot
 " Created:      2015 August 28
-" Last Change:  2017.08.01
-" Revision:     1.4
+" Last Change:  2020.03.22
+" Revision:     1.5
 
 if !exists("main_syntax")
 if version < 600
