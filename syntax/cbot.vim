@@ -51,25 +51,25 @@ if version >= 508 || !exists("did_xxd_syntax_inits")
   endif
 
 "CBOT
- HiLink CbotType         	Type
- HiLink CbotBuildings     Constant
- HiLink CbotMessages 			Constant
- HiLink CbotPortable      Constant
- HiLink CbotRobots    	  Constant
- HiLink CbotEnemies 	    Constant
- HiLink CbotMisc  	  	  Constant
- HiLink CbotFlags	    	  Constant
- HiLink CbotMisc2  	  	  Constant
- HiLink CbotBots         	Statement
- HiLink CbotTopo        	Statement
- HiLink CbotRobots      	Statement	
- HiLink CbotObjects	      Statement
- HiLink CbotExchange    	Statement
- HiLink CbotClasses			  Function
- HiLink CbotPoint					PreProc
- HiLink CbotStr	        	Statement
- HiLink CbotFiles	        Statement
- HiLink CbotMath          Statement
- HiLink CbotError	        Error
+ HiLink CbotType             Type
+ HiLink CbotBuildings        Constant
+ HiLink CbotMessages         Constant
+ HiLink CbotPortable         Constant
+ HiLink CbotRobots           Constant
+ HiLink CbotEnemies          Constant
+ HiLink CbotMisc             Constant
+ HiLink CbotFlags            Constant
+ HiLink CbotMisc2            Constant
+ HiLink CbotBots             Statement
+ HiLink CbotTopo             Statement
+ HiLink CbotRobots           Statement
+ HiLink CbotObjects          Statement
+ HiLink CbotExchange         Statement
+ HiLink CbotClasses          Function
+ HiLink CbotPoint            PreProc
+ HiLink CbotStr              Statement
+ HiLink CbotFiles            Statement
+ HiLink CbotMath             Statement
+ HiLink CbotError            Error
  delcommand HiLink
 endif
