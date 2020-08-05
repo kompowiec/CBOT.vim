@@ -4,7 +4,7 @@
 " Filenames:    *.cbot
 " Created:      2015 August 28
 " Last Change:  2020.03.22
-" Revision:     1.5
+" Revision:     1.6
 
 if !exists("main_syntax")
 if version < 600
@@ -20,16 +20,16 @@ runtime! syntax/c.vim
 syntax case match
 
 "CBOT lang
-syntax keyword CbotType point object produce
+syntax keyword CbotType point object produce cmdline ismovie repeat drive
 syn keyword CbotBuildings Houston SpaceShip BotFactory ResearchCenter RadarStation ExchangePost RepairCenter DefenseTower AutoLab PowerStation PowerPlant NuclearPlant Converter Derrick PowerCaptor Vault StartArea GoalArea Target1 AlienNest
 syn keyword CbotMessages DisplayMessage DisplayWarning DisplayInfo DisplayError
 syn keyword CbotPortable TitaniumOre UraniumOre Titanium PowerCell NuclearCell OrgaMatter BlackBox TNT KeyA KeyB KeyC KeyD
-syn keyword CbotPracticeBot PracticeBot TargetBot WheeledGrabber TrackedGrabber WingedGrabber LeggedGrabber WheeledSniffer TrackedSniffer WingedSniffer LeggedSniffer WheeledShooter TrackedShooter WingedShooter LeggedShooter WheeledOrgaShooter TrackedOrgaShooter WingedOrgaShooter LeggedOrgaShooter Subber recycler Shielder Thumper PhazerShooter
+syn keyword CbotPracticeBot PracticeBot TargetBot WheeledGrabber TrackedGrabber WingedGrabber LeggedGrabber WheeledSniffer TrackedSniffer WingedSniffer LeggedSniffer WheeledShooter TrackedShooter WingedShooter LeggedShooter WheeledOrgaShooter TrackedOrgaShooter WingedOrgaShooter LeggedOrgaShooter Subber recycler Shielder Thumper PhazerShooter WheeledBuilder TrackedBuilder WingedBuilder LeggedBuilder DrawerBot
 syn keyword CbotEnemies AlienQueen AlienEgg AlienAnt AlienSpider AlienWasp AlienWorm
 syn keyword CbotMisc Me Mine Barrier Wreck Ruin
 syn keyword CbotFlags BlueFlag RedFlag GreenFlag YellowFlag VioletFlag WayPoint Target2 EnergySpot TitaniumSpot UraniumSpot
 syn keyword CbotMisc2 ResearchOrgaShooter ResearchLegged ResearchTracked ResearchWinged ResearchShooter ResearchDefenseTower ResearchNuclearPlant ResearchSubber ResearchShielder ResearchThumper ResearchPhazerShooter 
-syn keyword CbotBots detect radar radarall search direction distance distance2d wait move turn goto motor jet message retobject errmode abstime pendown penup pencolor penwidth canresearch researched
+syn keyword CbotBots detect radar radarall search direction distance distance2d wait move turn goto motor jet message retobject errmode abstime ipf pendown penup pencolor penwidth canresearch researched
 syn keyword CbotTopo space flatspace topo flatground 
 syn keyword CbotRobots grab drop sniff thump recycle shield fire aim build canbuild buildingenabled
 syn keyword CbotObjects factory research takeoff busy
