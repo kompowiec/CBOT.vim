@@ -24,7 +24,7 @@ syntax keyword CbotType point object produce cmdline ismovie repeat drive
 syn keyword CbotBuildings Houston SpaceShip BotFactory ResearchCenter RadarStation ExchangePost RepairCenter DefenseTower AutoLab PowerStation PowerPlant NuclearPlant Converter Derrick PowerCaptor Vault StartArea GoalArea Target1 AlienNest
 syn keyword CbotMessages DisplayMessage DisplayWarning DisplayInfo DisplayError
 syn keyword CbotPortable TitaniumOre UraniumOre Titanium PowerCell NuclearCell OrgaMatter BlackBox TNT KeyA KeyB KeyC KeyD
-syn keyword CbotPracticeBot PracticeBot TargetBot WheeledGrabber TrackedGrabber WingedGrabber LeggedGrabber WheeledSniffer TrackedSniffer WingedSniffer LeggedSniffer WheeledShooter TrackedShooter WingedShooter LeggedShooter WheeledOrgaShooter TrackedOrgaShooter WingedOrgaShooter LeggedOrgaShooter Subber recycler Shielder Thumper PhazerShooter WheeledBuilder TrackedBuilder WingedBuilder LeggedBuilder DrawerBot
+syn keyword CbotRobots PracticeBot TargetBot WheeledGrabber TrackedGrabber WingedGrabber LeggedGrabber WheeledSniffer TrackedSniffer WingedSniffer LeggedSniffer WheeledShooter TrackedShooter WingedShooter LeggedShooter WheeledOrgaShooter TrackedOrgaShooter WingedOrgaShooter LeggedOrgaShooter Subber recycler Shielder Thumper PhazerShooter WheeledBuilder TrackedBuilder WingedBuilder LeggedBuilder DrawerBot
 syn keyword CbotEnemies AlienQueen AlienEgg AlienAnt AlienSpider AlienWasp AlienWorm
 syn keyword CbotMisc Me Mine Barrier Wreck Ruin
 syn keyword CbotFlags BlueFlag RedFlag GreenFlag YellowFlag VioletFlag WayPoint Target2 EnergySpot TitaniumSpot UraniumSpot
