@@ -31,7 +31,7 @@ syn keyword CbotFlags BlueFlag RedFlag GreenFlag YellowFlag VioletFlag WayPoint 
 syn keyword CbotMisc2 ResearchOrgaShooter ResearchLegged ResearchTracked ResearchWinged ResearchShooter ResearchDefenseTower ResearchNuclearPlant ResearchSubber ResearchShielder ResearchThumper ResearchPhazerShooter 
 syn keyword CbotBots detect radar radarall search direction distance distance2d wait move turn goto motor jet message retobject errmode abstime ipf pendown penup pencolor penwidth canresearch researched
 syn keyword CbotTopo space flatspace topo flatground 
-syn keyword CbotRobots grab drop sniff thump recycle shield fire aim build canbuild buildingenabled
+syn keyword CbotRobots2 grab drop sniff thump recycle shield fire aim build canbuild buildingenabled
 syn keyword CbotObjects factory research takeoff busy
 syn keyword CbotExchange receive send testinfo deleteinfo
 syn keyword CbotClasses class public private protected static synchronized new extends extern
@@ -62,7 +62,7 @@ if version >= 508 || !exists("did_xxd_syntax_inits")
  HiLink CbotMisc2            Constant
  HiLink CbotBots             Statement
  HiLink CbotTopo             Statement
- HiLink CbotRobots           Statement
+ HiLink CbotRobots2          Statement
  HiLink CbotObjects          Statement
  HiLink CbotExchange         Statement
  HiLink CbotClasses          Function
