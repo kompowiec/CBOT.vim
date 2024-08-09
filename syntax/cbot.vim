@@ -3,8 +3,8 @@
 " Maintainer:   Kompowiec2 <diasp@o2.pl>
 " Filenames:    *.cbot
 " Created:      2015 August 28
-" Last Change:  2020.03.22
-" Revision:     1.6
+" Last Change:  2024.08.09
+" Revision:     1.7
 
 if !exists("main_syntax")
 if version < 600
@@ -29,7 +29,7 @@ syn keyword CbotEnemies AlienQueen AlienEgg AlienAnt AlienSpider AlienWasp Alien
 syn keyword CbotMisc Me Mine Barrier Wreck Ruin
 syn keyword CbotFlags BlueFlag RedFlag GreenFlag YellowFlag VioletFlag WayPoint Target2 EnergySpot TitaniumSpot UraniumSpot
 syn keyword CbotMisc2 ResearchOrgaShooter ResearchLegged ResearchTracked ResearchWinged ResearchShooter ResearchDefenseTower ResearchNuclearPlant ResearchSubber ResearchShielder ResearchThumper ResearchPhazerShooter 
-syn keyword CbotBots detect radar radarall search direction distance distance2d wait move turn goto motor jet message retobject errmode abstime ipf pendown penup pencolor penwidth canresearch researched
+syn keyword CbotBots detect radar radarall search direction distance distance2d wait move turn goto motor jet message retobject errmode abstime ipf pendown penup pencolor penwidth canresearch researched delete setbuild setresearchenable setresearchdone getbuild getresearchenable getresearchdone playmusic stopmusic
 syn keyword CbotTopo space flatspace topo flatground 
 syn keyword CbotRobots2 grab drop sniff thump recycle shield fire aim build canbuild buildingenabled
 syn keyword CbotObjects factory research takeoff busy
